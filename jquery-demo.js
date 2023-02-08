@@ -45,3 +45,9 @@ class myJQuery extends jQuery {
 
   }
 }
+
+//
+const $p = new jQuery('p')
+$p
+$p.each((elem) => console.log(elem.nodeName))
+$p.on('click', () => { console.log('clicked') })
