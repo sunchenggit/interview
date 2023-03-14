@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="btn1">提交</button>
+  <!-- 
+    js 是单线程的
+    异步（setTimeout，ajax等）使用回调，基于 event loop
+    dom事件也使用回调，基于 event loop
+  -->
+  <script>
+    console.log('hi')
+    const btn = document.getElementById('btn1')
+    btn.addEventListener('click', function () {
+      console.log('button click')
+    })
+    console.log('Bye')
+  </script>
+</body>
+
+</html>
